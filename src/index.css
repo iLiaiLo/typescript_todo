@@ -5,9 +5,101 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background:dodgerblue;
 }
-
+/*
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+*/
+
+.todoContainer{
+  width:430px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  position:absolute;
+  left:50%;
+  top:10%;
+  transform:translate(-50%,0);
+}
+.todoSection{
+  display:flex;
+  justify-content:center;
+  width:100%;
+}
+.todoSection input{
+  width:100%;
+  padding:18px;
+  font-size:20px;
+  margin-right:20px;
+  outline:none;
+  border:none;
+}
+.todoSection input:focus{
+  box-shadow:0 0 10px black;
+}
+.todoSection button{
+  font-size:15px;
+  cursor:pointer;
+  border:none;
+  background:#1de60f;
+  color:white;
+}
+.todoSection button:hover{
+  box-shadow:0 0 5px black;
+}
+.clearButton{
+  margin-left:10px;
+}
+.todoTasks{
+  display:flex;
+  flex-direction:column;
+  width:100%;
+}
+.divContainer{
+  margin-top:20px;
+  position:relative;
+  display:flex;
+  align-items:center;
+  background:yellow;
+  padding:5px;
+}
+.todoTasks input{
+  height:50px;
+  width:50px;
+  margin:0;
+  background:white;
+  cursor:pointer;
+}
+.todoTasks input:hover{
+  box-shadow:0 0 5px black;
+}
+.todoTasks button{
+  position:absolute;
+  right:2px;
+  height:50px;
+  background:#404040;
+  color:white;
+  font-size:15px;
+  cursor:pointer;
+  border:none;
+}
+.todoTasks button:hover{
+  box-shadow:0 0 5px black;
+}
+.todoTextDiv{
+  display:flex;
+  width:250px;
+  margin-left:5px;
+  height:50px;
+  font-size:26px;
+  padding-left:2px;
+  align-items:center;
+  overflow-y:auto;
+  border:2px dotted black;
+  border-radius:5px;
+  word-break:break-all;
+  background:#fafafa;
 }
